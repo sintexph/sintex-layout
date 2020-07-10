@@ -13,11 +13,12 @@
 
 ### Top Navigation Layout 
 
-    x-sintex-layout-top-nav
+`x-sintex-layout-top-nav`
     
 **Usage**
 
-    <x-sintex-layout-top-nav  
+```php
+<x-sintex-layout-top-nav  
     
     title="Page Title" 
     header-text="Dashboard" 
@@ -25,15 +26,16 @@
     nav-bar-color="navbar-dark navbar-success"  
     brand-name="My Company">
     
-    </x-sintex-layout-top-nav>
+</x-sintex-layout-top-nav>
+```
 
 **Parameters**
 
- - Title [*Required*]
- - Header Text [*Required*]
- - Header Text Small [*Required*]
- - Navigation Bar Color [*Optional*]
- - Brand Name [*Required*]
+ - **title**  - The page title [*Required*]
+ - **header-text** - Content Header text[*Required*]
+ - **header-text-sm** - Content Header text small [*Required*]
+ - **nav-bar-color** - Navigation Bar Color [*Optional*]
+ - **brand-name** - Brand Name [*Required*]
 
 Just add the parameters inside the component tag.
 
@@ -48,7 +50,8 @@ Just add the parameters inside the component tag.
 
 Insert the slots inside the component like shown usage below.
  
-    <x-sintex-layout-top-nav  
+```php
+<x-sintex-layout-top-nav  
     
     title="Page Title" 
     header-text="Dashboard" 
@@ -63,8 +66,49 @@ Insert the slots inside the component like shown usage below.
 
     </x-slot>
     
-    </x-sintex-layout-top-nav>
-   To see the full example implementation of the component, publish the views that can be found after publishing in `/views/vendor/sintex-layouts/top-nav`
+</x-sintex-layout-top-nav>
+```
+To see the full example implementation of the component, publish the views that can be found after publishing in `/views/vendor/sintex-layouts/top-nav`
+
+
+
+### Sidebar Layout
+`x-sintex-layout-sidebar`
+
+**Usage**
+```php
+<x-sintex-layout-sidebar 
+
+	title="Server Error!" 
+	header-text="test" 
+	nav-bar-color="navbar-dark navbar-success"
+	sidebar-color="sidebar-light-warning" 
+	brand-color="navbar-primary" 
+	brand-name="Helpdesk 4">
+
+</x-sintex-layout-sidebar>
+```
+**Parameters**
+
+ - **title**  - The page title [*Required*]
+ - **header-text** - Content Header text[*Required*]
+ - **nav-bar-color** - Navigation bar color [*Optional*]
+ - **sidebar-color** - Sidebar panel color [*Optional*]
+ - **brand-color** - Sidebar brand color [*Optional*]
+ - **brand-name** - Brand Name [*Required*]
+ 
+**Named Slots**
+
+ - navbar - Slot for Navigation menu bar
+ - sidebarMenu - Slot for sidebar menu items `<li>`
+ - breadcrumbItems  - Slot for Breadcrumb items `<li>`
+ - sidebarUserPanel - Slot for sidebar user panel
+ - content - Slot where the content to be inserted
+ - footer  - Slot where the footer or company details or info to be inserted
+ - headerImports - Slot in header where the custom css or js file to be inserted
+ - footerImports - Slot in footer where the custom js file to be inserted
+ 
+To see the full example implementation of the component, publish the views that can be found after publishing in `/views/vendor/sintex-layouts/sidebar`
 
 
 ## Credits
