@@ -40,7 +40,7 @@ Just add the parameters inside the component tag.
  - headerImports - Slot in header where the custom css or js file to be inserted
  - footerImports - Slot in footer where the custom js file to be inserted
 
-Insert the slots inside the component like show usage below.
+Insert the slots inside the component like shown usage below.
  
     <x-sintex-layout-top-nav  
     
