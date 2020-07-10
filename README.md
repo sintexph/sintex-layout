@@ -1,5 +1,5 @@
 
-# Laravel 5 & 7 Sintex Layout Powered by Admin LTE 3
+# Laravel 7 Sintex Layout Powered by Admin LTE 3
 
 **Installation**
 
@@ -9,7 +9,7 @@
     php artisan vendor:publish --provider="SintexLayout\SintexLayoutProdvider"
 
 # Components
-`x- tag` is an implementation of **Laravel 7x** and `@component` **name** is an implementation of **Laravel 5**
+`x- tag` is an implementation of **Laravel 7x**
 
 ### Top Navigation Layout 
 

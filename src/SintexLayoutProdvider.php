@@ -3,6 +3,7 @@
 namespace SintexLayout;
 
 use Illuminate\Support\ServiceProvider;
+use Illuminate\Support\Facades\Blade;
 
 class SintexLayoutProdvider extends ServiceProvider
 {
@@ -13,17 +14,6 @@ class SintexLayoutProdvider extends ServiceProvider
      */
     public function register()
     {
-        
-        $this->loadViewsFrom(__DIR__.'/views', 'sintex');
-
-        $this->loadViewComponentsAs('sintex', [
-            LayoutSideBar::class,
-            LayoutTopNav::class,
-        ]);
-
-        $this->publishes([
-            __DIR__.'/views/layouts' => resource_path('views/vendor/sintex_layouts'),
-        ]);
 
     }
 
@@ -34,6 +24,15 @@ class SintexLayoutProdvider extends ServiceProvider
      */
     public function boot()
     {
-        //
+        $this->loadViewsFrom(__DIR__.'/views', 'sintex');
+
+        $this->loadViewComponentsAs('sintex', [
+            LayoutSidebar::class,
+            LayoutTopNav::class,
+        ]);
+
+        $this->publishes([
+            __DIR__.'/views/layouts' => resource_path('views/vendor/sintex_layout'),
+        ]);
     }
 }
