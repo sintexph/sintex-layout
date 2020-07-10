@@ -9,7 +9,14 @@
     php artisan vendor:publish --provider="SintexLayout\SintexLayoutProdvider"
 
 # Components
+
+
+ - **[Top Navigation Layout](https://github.com/sintexph/sintex-layout#top-navigation-layout "Top Navigation Layout")**
+ - **[Sidebar Layout](https://github.com/sintexph/sintex-layout#sidebar-layout "Sidebar Layout")**
+ 
+
 `x- tag` is an implementation of **Laravel 7x**
+
 
 ### Top Navigation Layout 
 
