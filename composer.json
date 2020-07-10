@@ -5,6 +5,11 @@
     "minimum-stability": "dev",
     "require": {},
     "type": "library",
+    "autoload": {
+        "psr-4": {
+            "SintexLayout\\": "src/"
+        }
+    },
     "extra": {
         "laravel": {
             "providers": [
