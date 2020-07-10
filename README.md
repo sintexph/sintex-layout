@@ -1,14 +1,20 @@
 
-# Laravel 7 Sintex Layout Powered by Admin LTE 3
+# Laravel 5 & 7 Sintex Layout Powered by Admin LTE 3
 
 **Installation**
 
     composer require sintex/sintex-layout
 **Publishing Layout**
 
-## Top Navigation Component
+    php artisan vendor:publish --provider="SintexLayout\SintexLayoutProdvider"
+
+# Components
+`x- tag` is an implementation of **Laravel 7x** and `@component` **name** is an implementation of **Laravel 5**
+
+### Top Navigation Layout 
 
     x-sintex-layout-top-nav
+    
 **Usage**
 
     <x-sintex-layout-top-nav  
@@ -59,3 +65,9 @@ Insert the slots inside the component like shown usage below.
     
     </x-sintex-layout-top-nav>
    To see the full example implementation of the component, publish the views that can be found after publishing in `/views/vendor/sintex-layouts/top-nav`
+
+
+## Credits
+
+ [**Laravel Framework**](https://github.com/laravel/laravel) ![enter image description here](https://camo.githubusercontent.com/c4b3056564d4d97f40afa08cffefa26c2a695316/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6474666276766b79702f696d6167652f75706c6f61642f76313536363333313337372f6c61726176656c2d6c6f676f6c6f636b75702d636d796b2d7265642e737667)
+[**Admin LTE 3**](https://github.com/ColorlibHQ/AdminLTE/)![enter image description here](https://camo.githubusercontent.com/27d69461ad4caeb670264814c1fb624faadc9dca/68747470733a2f2f61646d696e6c74652e696f2f41646d696e4c5445332e706e67)
