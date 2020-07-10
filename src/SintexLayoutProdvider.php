@@ -22,7 +22,7 @@ class SintexLayoutProdvider extends ServiceProvider
         ]);
 
         $this->publishes([
-            __DIR__.'/views' => resource_path('views/vendor/sintex_layouts'),
+            __DIR__.'/views/layouts' => resource_path('views/vendor/sintex_layouts'),
         ]);
 
     }
