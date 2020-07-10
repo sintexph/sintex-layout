@@ -1,0 +1,15 @@
+{
+    "name": "sintex/sintex-layout",
+    "description": "Laravel 7 Sintex Layout Powered by Admin LTE 3",
+    "license": "None",
+    "minimum-stability": "dev",
+    "require": {},
+    "type": "library",
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Sintex\\SintexLayoutProdvider"
+            ]
+        }
+    }
+}
