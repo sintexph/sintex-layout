@@ -1,5 +1,6 @@
-<x-sintex-layout-top-nav title="Server Error!" header-text="test" header-text-sm="test sm"
-    nav-bar-color="navbar-dark navbar-success" brand-name="Helpdesk 4">
+<x-sintex-layout-top-nav title="Page Title" header-text="Dashboard" header-text-sm="This is the dashboard"
+    nav-bar-color="navbar-dark navbar-success" brand-name="My Company">
+
 
     <x-slot name="navbar">
 
@@ -168,7 +169,7 @@
 
     </x-slot>
 
-  
+
 
     <x-slot name="breadcrumbItems">
 
