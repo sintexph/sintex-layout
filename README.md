@@ -3,7 +3,7 @@
 
 **Installation**
 
-    composer require sintex/sintex-layout:1.0
+    composer require sintex/sintex-layout:1.*
 **Publishing Layout**
 
     php artisan vendor:publish --provider="SintexLayout\SintexLayoutProdvider"
