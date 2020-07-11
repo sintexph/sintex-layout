@@ -57,40 +57,51 @@ Just add the parameters inside the component tag.
 Insert the slots inside the component like shown usage below.
  
 ```php
-@slot("content")
 
-    <div class="row">
-        <div class="col-lg-6">
-            <div class="card">
-                <div class="card-body">
-                    <h5 class="card-title">Card title 1</h5>
+@sintextop([
+    "title"=>"Page Title",
+    "headerText"=>"Dashboard",
+    "headerTextSm"=>"This is the dashboard",
+    "navBarColor"=>"navbar-dark navbar-success",
+    "brandName"=>"My Company"
+])
 
-                    <p class="card-text">
-                        Some quick example text to build on the card title and make up the bulk of the card's
-                        content.
-                    </p>
+    @slot("content")
 
-                    <a href="#" class="card-link">Card link</a>
-                    <a href="#" class="card-link">Another link</a>
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title 1</h5>
+
+                        <p class="card-text">
+                            Some quick example text to build on the card title and make up the bulk of the card's
+                            content.
+                        </p>
+
+                        <a href="#" class="card-link">Card link</a>
+                        <a href="#" class="card-link">Another link</a>
+                    </div>
                 </div>
+
+                <div class="card card-primary card-outline">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+
+                        <p class="card-text">
+                            Some quick example text to build on the card title and make up the bulk of the card's
+                            content.
+                        </p>
+                        <a href="#" class="card-link">Card link</a>
+                        <a href="#" class="card-link">Another link</a>
+                    </div>
+                </div><!-- /.card -->
             </div>
-
-            <div class="card card-primary card-outline">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-
-                    <p class="card-text">
-                        Some quick example text to build on the card title and make up the bulk of the card's
-                        content.
-                    </p>
-                    <a href="#" class="card-link">Card link</a>
-                    <a href="#" class="card-link">Another link</a>
-                </div>
-            </div><!-- /.card -->
         </div>
-    </div>
 
-@endslot
+    @endslot
+
+@endsintextop
 ```
 To see the full example implementation of the component, publish the views that can be found after publishing in `/views/vendor/sintex-layouts/top-nav`
 
@@ -135,40 +146,51 @@ To see the full example implementation of the component, publish the views that 
 Insert the slots inside the component like shown usage below.
  
 ```php
-@slot("content")
+@sintexside([
+    "title"=>"Server Error!",
+    "headerText"=>"test",
+    "navBarColor"=>"navbar-dark navbar-success",
+    "sidebarColor"=>"sidebar-light-warning",
+    "brandColor"=>"navbar-primary",
+    "brandName"=>"Helpdesk 4"
+])
 
-    <div class="row">
-        <div class="col-lg-6">
-            <div class="card">
-                <div class="card-body">
-                    <h5 class="card-title">Card title 1</h5>
+    @slot("content")
 
-                    <p class="card-text">
-                        Some quick example text to build on the card title and make up the bulk of the card's
-                        content.
-                    </p>
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title 1</h5>
 
-                    <a href="#" class="card-link">Card link</a>
-                    <a href="#" class="card-link">Another link</a>
+                        <p class="card-text">
+                            Some quick example text to build on the card title and make up the bulk of the card's
+                            content.
+                        </p>
+
+                        <a href="#" class="card-link">Card link</a>
+                        <a href="#" class="card-link">Another link</a>
+                    </div>
                 </div>
+
+                <div class="card card-primary card-outline">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+
+                        <p class="card-text">
+                            Some quick example text to build on the card title and make up the bulk of the card's
+                            content.
+                        </p>
+                        <a href="#" class="card-link">Card link</a>
+                        <a href="#" class="card-link">Another link</a>
+                    </div>
+                </div><!-- /.card -->
             </div>
-
-            <div class="card card-primary card-outline">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-
-                    <p class="card-text">
-                        Some quick example text to build on the card title and make up the bulk of the card's
-                        content.
-                    </p>
-                    <a href="#" class="card-link">Card link</a>
-                    <a href="#" class="card-link">Another link</a>
-                </div>
-            </div><!-- /.card -->
         </div>
-    </div>
 
-@endslot
+    @endslot
+
+@endsintexside
 ```
 
 To see the full example implementation of the component, publish the views that can be found after publishing in `/views/vendor/sintex-layouts/sidebar`
