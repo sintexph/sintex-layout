@@ -115,6 +115,26 @@ To see the full example implementation of the component, publish the views that 
  - headerImports - Slot in header where the custom css or js file to be inserted
  - footerImports - Slot in footer where the custom js file to be inserted
  
+```php
+<x-sintex-layout-sidebar 
+
+	title="Server Error!" 
+	header-text="test" 
+	nav-bar-color="navbar-dark navbar-success"
+	sidebar-color="sidebar-light-warning" 
+	brand-color="navbar-primary" 
+	brand-name="Helpdesk 4">
+
+    <x-slot name="breadcrumbItems">
+
+        <li class="breadcrumb-item"><a href="#">Home</a></li>
+        <li class="breadcrumb-item active">Dashboard v1</li>
+
+    </x-slot>
+    
+</x-sintex-layout-sidebar>
+```
+
 To see the full example implementation of the component, publish the views that can be found after publishing in `/views/vendor/sintex-layouts/sidebar`
 
 
