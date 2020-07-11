@@ -767,4 +767,4 @@
 
     @endslot
 
-@endsitexside
+@endsintexside
