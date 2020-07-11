@@ -1,7 +1,14 @@
-<x-sintex-layout-sidebar title="Server Error!" header-text="test" nav-bar-color="navbar-dark navbar-success"
-    sidebar-color="sidebar-light-warning" brand-color="navbar-primary" brand-name="Helpdesk 4">
+@sintexside([
+    "title"=>"Server Error!",
+    "headerText"=>"test",
+    "navBarColor"=>"navbar-dark navbar-success",
+    "sidebarColor"=>"sidebar-light-warning",
+    "brandColor"=>"navbar-primary",
+    "brandName"=>"Helpdesk 4"
+])
 
-    <x-slot name="sidebarMenu">
+
+    @slot("sidebarMenu")
 
 
         <li class="nav-item has-treeview menu-open">
@@ -529,9 +536,9 @@
             </a>
         </li>
 
-    </x-slot>
+    @endslot
 
-    <x-slot name="navbar">
+    @slot("navbar")
 
         <!-- Left navbar links -->
         <ul class="navbar-nav">
@@ -570,8 +577,8 @@
                     <a href="#" class="dropdown-item">
                         <!-- Message Start -->
                         <div class="media">
-                            <img src="http://cdn.sportscity.com.ph/admin-lte-3/dist/img/user1-128x128.jpg"
-                                alt="User Avatar" class="img-size-50 mr-3 img-circle">
+                            <img src="http://cdn.sportscity.com.ph/admin-lte-3/dist/img/user1-128x128.jpg" alt="User Avatar"
+                                class="img-size-50 mr-3 img-circle">
                             <div class="media-body">
                                 <h3 class="dropdown-item-title">
                                     Brad Diesel
@@ -587,8 +594,8 @@
                     <a href="#" class="dropdown-item">
                         <!-- Message Start -->
                         <div class="media">
-                            <img src="http://cdn.sportscity.com.ph/admin-lte-3/dist/img/user8-128x128.jpg"
-                                alt="User Avatar" class="img-size-50 img-circle mr-3">
+                            <img src="http://cdn.sportscity.com.ph/admin-lte-3/dist/img/user8-128x128.jpg" alt="User Avatar"
+                                class="img-size-50 img-circle mr-3">
                             <div class="media-body">
                                 <h3 class="dropdown-item-title">
                                     John Pierce
@@ -604,8 +611,8 @@
                     <a href="#" class="dropdown-item">
                         <!-- Message Start -->
                         <div class="media">
-                            <img src="http://cdn.sportscity.com.ph/admin-lte-3/dist/img/user3-128x128.jpg"
-                                alt="User Avatar" class="img-size-50 img-circle mr-3">
+                            <img src="http://cdn.sportscity.com.ph/admin-lte-3/dist/img/user3-128x128.jpg" alt="User Avatar"
+                                class="img-size-50 img-circle mr-3">
                             <div class="media-body">
                                 <h3 class="dropdown-item-title">
                                     Nora Silvester
@@ -654,31 +661,32 @@
                 </a>
             </li>
         </ul>
-    </x-slot>
 
-    <x-slot name="sidebarUserPanel">
+    @endslot
+
+    @slot("sidebarUserPanel")
 
         <!-- Sidebar user panel (optional) -->
         <div class="user-panel mt-3 pb-3 mb-3 d-flex">
             <div class="image">
-                <img src="http://cdn.sportscity.com.ph/admin-lte-3/dist/img/user2-160x160.jpg"
-                    class="img-circle elevation-2" alt="User Image">
+                <img src="http://cdn.sportscity.com.ph/admin-lte-3/dist/img/user2-160x160.jpg" class="img-circle elevation-2"
+                    alt="User Image">
             </div>
             <div class="info">
                 <a href="#" class="d-block">Alexander Pierce</a>
             </div>
         </div>
 
-    </x-slot>
+    @endslot
 
-    <x-slot name="breadcrumbItems">
-        
+    @slot("breadcrumbItems")
+
         <li class="breadcrumb-item"><a href="#">Home</a></li>
         <li class="breadcrumb-item active">Dashboard v1</li>
 
-    </x-slot>
+    @endslot
 
-    <x-slot name="content">
+    @slot("content")
 
         <div class="row">
             <div class="col-lg-6">
@@ -738,9 +746,9 @@
             <!-- /.col-md-6 -->
         </div>
 
-    </x-slot>
+    @endslot
 
-    <x-slot name="footer">
+    @slot("footer")
 
         <strong>Copyright &copy; 2014-2019 <a href="http://adminlte.io">AdminLTE.io</a>.</strong>
         All rights reserved.
@@ -748,15 +756,15 @@
             <b>Version</b> 3.0.5
         </div>
 
-    </x-slot>
+    @endslot
 
 
-    <x-slot name="headerImports">
+    @slot("headerImports")
 
-    </x-slot>
+    @endslot
 
-    <x-slot name="footerImports">
+    @slot("footerImports")
 
-    </x-slot>
+    @endslot
 
-</x-sintex-layout-sidebar>
+@endsitexside

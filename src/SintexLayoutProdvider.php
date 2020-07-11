@@ -26,10 +26,8 @@ class SintexLayoutProdvider extends ServiceProvider
     {
         $this->loadViewsFrom(__DIR__.'/views', 'sintex');
 
-        $this->loadViewComponentsAs('sintex', [
-            LayoutSidebar::class,
-            LayoutTopNav::class,
-        ]);
+        Blade::component('sintex::components.sintex-layout-top-nav', 'sintextop');
+        Blade::component('sintex::components.sintex-layout-sidebar', 'sintexside');
 
         $this->publishes([
             __DIR__.'/views/layouts' => resource_path('views/vendor/sintex_layout'),

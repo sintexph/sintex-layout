@@ -1,8 +1,13 @@
-<x-sintex-layout-top-nav title="Page Title" header-text="Dashboard" header-text-sm="This is the dashboard"
-    nav-bar-color="navbar-dark navbar-success" brand-name="My Company">
+@sintextop([
+    "title"=>"Page Title",
+    "headerText"=>"Dashboard",
+    "headerTextSm"=>"This is the dashboard",
+    "navBarColor"=>"navbar-dark navbar-success",
+    "brandName"=>"My Company"
+])
 
 
-    <x-slot name="navbar">
+    @slot("navbar")
 
         <button class="navbar-toggler order-1" type="button" data-toggle="collapse" data-target="#navbarCollapse"
             aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
@@ -167,18 +172,18 @@
             </li>
         </ul>
 
-    </x-slot>
+    @endslot
 
 
 
-    <x-slot name="breadcrumbItems">
+    @slot("breadcrumbItems")
 
         <li class="breadcrumb-item"><a href="#">Home 1</a></li>
         <li class="breadcrumb-item active">Dashboard v1</li>
 
-    </x-slot>
+    @endslot
 
-    <x-slot name="content">
+    @slot("content")
 
         <div class="row">
             <div class="col-lg-6">
@@ -238,9 +243,9 @@
             <!-- /.col-md-6 -->
         </div>
 
-    </x-slot>
+    @endslot
 
-    <x-slot name="footer">
+    @slot("footer")
 
         <strong>Copyright1 &copy; 2014-2019 <a href="http://adminlte.io">AdminLTE.io</a>.</strong>
         All rights reserved.
@@ -248,15 +253,15 @@
             <b>Version</b> 3.0.5
         </div>
 
-    </x-slot>
+    @endslot
 
 
-    <x-slot name="headerImports">
+    @slot("headerImports")
 
-    </x-slot>
+    @endslot
 
-    <x-slot name="footerImports">
+    @slot("footerImports")
 
-    </x-slot>
+    @endslot
 
-</x-sintex-layout-top-nav>
+@endsintextop
