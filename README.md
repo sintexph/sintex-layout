@@ -1,5 +1,5 @@
 
-# Laravel 7 Sintex Layout Powered by Admin LTE 3
+# Laravel 5 Sintex Layout Powered by Admin LTE 3
 
 **Installation**
 
@@ -15,25 +15,17 @@
  - **[Sidebar Layout](https://github.com/sintexph/sintex-layout#sidebar-layout "Sidebar Layout")**
  
 
-`x- tag` is an implementation of **Laravel 7x**
+`@component` is an implementation of **Laravel 5**
 
 
 ### Top Navigation Layout 
 
-`x-sintex-layout-top-nav`
+`Need to update`
     
 **Usage**
 
 ```php
-<x-sintex-layout-top-nav  
-    
-    title="Page Title" 
-    header-text="Dashboard" 
-    header-text-sm="This is the dashboard" 
-    nav-bar-color="navbar-dark navbar-success"  
-    brand-name="My Company">
-    
-</x-sintex-layout-top-nav>
+Need to update
 ```
 
 **Parameters**
@@ -58,42 +50,18 @@ Just add the parameters inside the component tag.
 Insert the slots inside the component like shown usage below.
  
 ```php
-<x-sintex-layout-top-nav  
-    
-    title="Page Title" 
-    header-text="Dashboard" 
-    header-text-sm="This is the dashboard" 
-    nav-bar-color="navbar-dark navbar-success"  
-    brand-name="My Company">
-
-    <x-slot name="breadcrumbItems">
-
-        <li class="breadcrumb-item"><a href="#">Home</a></li>
-        <li class="breadcrumb-item active">Dashboard v1</li>
-
-    </x-slot>
-    
-</x-sintex-layout-top-nav>
+Need to update
 ```
 To see the full example implementation of the component, publish the views that can be found after publishing in `/views/vendor/sintex-layouts/top-nav`
 
 
 
 ### Sidebar Layout
-`x-sintex-layout-sidebar`
+`Need to update`
 
 **Usage**
 ```php
-<x-sintex-layout-sidebar 
-
-	title="Server Error!" 
-	header-text="test" 
-	nav-bar-color="navbar-dark navbar-success"
-	sidebar-color="sidebar-light-warning" 
-	brand-color="navbar-primary" 
-	brand-name="Helpdesk 4">
-
-</x-sintex-layout-sidebar>
+Need to update
 ```
 **Parameters**
 
