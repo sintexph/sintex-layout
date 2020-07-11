@@ -30,15 +30,15 @@
     <div class="wrapper">
 
         <!-- Navbar -->
-        <nav class="main-header navbar navbar-expand {{ $navBarColor }}">
+        <nav class="main-header navbar navbar-expand {{ $navBarColor ?? 'navbar-light navbar-white' }}">
             {!! $navbar ?? '' !!}
         </nav>
         <!-- /.navbar -->
 
         <!-- Main Sidebar Container -->
-        <aside class="main-sidebar {{ $sidebarColor }} elevation-4">
+        <aside class="main-sidebar {{ $sidebarColor ?? 'sidebar-dark-primary' }} elevation-4">
             <!-- Brand Logo -->
-            <a href="{{ config('app.url') }}" class="brand-link {{ $brandColor }}">
+            <a href="{{ config('app.url') }}" class="brand-link {{ $brandColor ?? '' }}">
                 <img src="{{ $brandLogo ?? 'http://cdn.sportscity.com.ph/admin-lte-3/dist/img/AdminLTELogo.png' }}"
                     alt="{{ $brandName }} Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
                 <span class="brand-text font-weight-light">{{ $brandName }}</span>

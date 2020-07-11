@@ -23,7 +23,7 @@
     <div class="wrapper">
 
         <!-- Navbar -->
-        <nav class="main-header navbar navbar-expand-md {{ $navBarColor }} ">
+        <nav class="main-header navbar navbar-expand-md {{ $navBarColor ?? 'navbar-light navbar-white' }} ">
             <div class="container">
                 <a href="{{ config('app.url') }}" class="navbar-brand">
                     <img src="{{ $brandLogo ?? 'http://cdn.sportscity.com.ph/admin-lte-3/dist/img/AdminLTELogo.png' }}"
