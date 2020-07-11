@@ -3,7 +3,7 @@
 
 **Installation**
 
-    composer require sintex/sintex-layout
+    composer require sintex/sintex-layout:1.0
 **Publishing Layout**
 
     php artisan vendor:publish --provider="SintexLayout\SintexLayoutProdvider"
@@ -20,12 +20,19 @@
 
 ### Top Navigation Layout 
 
-`Need to update`
+`@sintextop`
     
 **Usage**
 
 ```php
-Need to update
+@sintextop([
+    "title"=>"Page Title",
+    "headerText"=>"Dashboard",
+    "headerTextSm"=>"This is the dashboard",
+    "navBarColor"=>"navbar-dark navbar-success",
+    "brandName"=>"My Company"
+])
+@endsintextop
 ```
 
 **Parameters**
@@ -50,18 +57,59 @@ Just add the parameters inside the component tag.
 Insert the slots inside the component like shown usage below.
  
 ```php
-Need to update
+@slot("content")
+
+    <div class="row">
+        <div class="col-lg-6">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Card title 1</h5>
+
+                    <p class="card-text">
+                        Some quick example text to build on the card title and make up the bulk of the card's
+                        content.
+                    </p>
+
+                    <a href="#" class="card-link">Card link</a>
+                    <a href="#" class="card-link">Another link</a>
+                </div>
+            </div>
+
+            <div class="card card-primary card-outline">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+
+                    <p class="card-text">
+                        Some quick example text to build on the card title and make up the bulk of the card's
+                        content.
+                    </p>
+                    <a href="#" class="card-link">Card link</a>
+                    <a href="#" class="card-link">Another link</a>
+                </div>
+            </div><!-- /.card -->
+        </div>
+    </div>
+
+@endslot
 ```
 To see the full example implementation of the component, publish the views that can be found after publishing in `/views/vendor/sintex-layouts/top-nav`
 
 
 
 ### Sidebar Layout
-`Need to update`
+`@sintexside`
 
 **Usage**
 ```php
-Need to update
+@sintexside([
+    "title"=>"Server Error!",
+    "headerText"=>"test",
+    "navBarColor"=>"navbar-dark navbar-success",
+    "sidebarColor"=>"sidebar-light-warning",
+    "brandColor"=>"navbar-primary",
+    "brandName"=>"Helpdesk 4"
+])
+@endsintexside
 ```
 **Parameters**
 
@@ -83,6 +131,46 @@ Need to update
  - headerImports - Slot in header where the custom css or js file to be inserted
  - footerImports - Slot in footer where the custom js file to be inserted
  
+
+Insert the slots inside the component like shown usage below.
+ 
+```php
+@slot("content")
+
+    <div class="row">
+        <div class="col-lg-6">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Card title 1</h5>
+
+                    <p class="card-text">
+                        Some quick example text to build on the card title and make up the bulk of the card's
+                        content.
+                    </p>
+
+                    <a href="#" class="card-link">Card link</a>
+                    <a href="#" class="card-link">Another link</a>
+                </div>
+            </div>
+
+            <div class="card card-primary card-outline">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+
+                    <p class="card-text">
+                        Some quick example text to build on the card title and make up the bulk of the card's
+                        content.
+                    </p>
+                    <a href="#" class="card-link">Card link</a>
+                    <a href="#" class="card-link">Another link</a>
+                </div>
+            </div><!-- /.card -->
+        </div>
+    </div>
+
+@endslot
+```
+
 To see the full example implementation of the component, publish the views that can be found after publishing in `/views/vendor/sintex-layouts/sidebar`
 
 
