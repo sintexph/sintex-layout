@@ -38,8 +38,8 @@
 **Parameters**
 
  - **title**  - The page title [*Required*]
- - **header-text** - Content Header text[*Required*]
- - **header-text-sm** - Content Header text small [*Required*]
+ - **header-text** - Content Header text[*Optional*]
+ - **header-text-sm** - Content Header text small [*Optional*]
  - **nav-bar-color** - Navigation Bar Color [*Optional*]
  - **brand-name** - Brand Name [*Required*]
 
