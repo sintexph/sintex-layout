@@ -13,6 +13,7 @@ class LayoutTopNav extends Component
     public $brandName;
     public $brandLogo;
     public $headerTextSm;
+    public $textSize;
 
     /**
      * Create a new component instance.
@@ -25,7 +26,8 @@ class LayoutTopNav extends Component
         $headerTextSm,
         $brandName,
         $navBarColor='navbar-light navbar-white',
-        $brandLogo=null
+        $brandLogo=null,
+        $textSize='text-sm'
     )
     { 
         $this->title = $title;
@@ -34,6 +36,7 @@ class LayoutTopNav extends Component
         $this->headerTextSm = $headerTextSm;
         $this->brandName = $brandName;
         $this->brandLogo = $brandLogo;
+        $this->textSize = $textSize;
     }
 
     /**
