@@ -13,6 +13,7 @@ class LayoutSidebar extends Component
     public $brandColor;
     public $brandName;
     public $brandLogo;
+    public $textSize;
 
     /**
      * Create a new component instance.
@@ -26,7 +27,8 @@ class LayoutSidebar extends Component
         $navBarColor='navbar-light navbar-white',
         $sidebarColor='sidebar-dark-primary',
         $brandColor=null,
-        $brandLogo=null
+        $brandLogo=null,
+        $textSize='text-sm'
     )
     { 
         $this->title = $title;
@@ -36,6 +38,8 @@ class LayoutSidebar extends Component
         $this->brandColor = $brandColor;
         $this->brandName = $brandName;
         $this->brandLogo = $brandLogo;
+        $this->textSize = $textSize;
+        
     }
 
     /**

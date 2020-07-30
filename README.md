@@ -31,7 +31,9 @@
     header-text="Dashboard" 
     header-text-sm="This is the dashboard" 
     nav-bar-color="navbar-dark navbar-success"  
-    brand-name="My Company">
+    brand-name="My Company"
+    text-sizing="text-md"
+    >
     
 </x-sintex-layout-top-nav>
 ```
@@ -43,6 +45,7 @@
  - **header-text-sm** - Content Header text small [*Required*]
  - **nav-bar-color** - Navigation Bar Color [*Optional*]
  - **brand-name** - Brand Name [*Required*]
+ - **text-sizing** - Body text sizing [*Optional*]
 
 Just add the parameters inside the component tag.
 
@@ -91,7 +94,9 @@ To see the full example implementation of the component, publish the views that 
 	nav-bar-color="navbar-dark navbar-success"
 	sidebar-color="sidebar-light-warning" 
 	brand-color="navbar-primary" 
-	brand-name="Helpdesk 4">
+    brand-name="Helpdesk 4"
+    text-sizing="text-md"
+    >
 
 </x-sintex-layout-sidebar>
 ```
@@ -103,6 +108,7 @@ To see the full example implementation of the component, publish the views that 
  - **sidebar-color** - Sidebar panel color [*Optional*]
  - **brand-color** - Sidebar brand color [*Optional*]
  - **brand-name** - Brand Name [*Required*]
+ - **text-sizing** - Body text sizing [*Optional*]
  
 **Named Slots**
 
